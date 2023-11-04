@@ -13,11 +13,11 @@ function mostrarContenidos(){
         
         document.getElementById("estados").innerHTML=document.getElementById("estados").innerText + xmlhttp.readyState+ '- '+getStateText(xmlhttp.readyState) +'<br/>';
         if (xmlhttp.readyState==4 && xmlhttp.status==200) { 
-            
-            document.getElementById("contenidos").innerHTML=xmlhttp.responseText;
-    
+
             document.getElementById("cabeceras").innerHTML=xmlhttp.getAllResponseHeaders();
             document.getElementById("codigo").innerHTML=xmlhttp.status;
+            document.getElementById("contenidos").innerHTML=xmlhttp.responseText;   
+            
         }      
     }
     //xmlhttp.open("GET","https://martabdelarocha.github.io/MyBlog/about.html",true);
