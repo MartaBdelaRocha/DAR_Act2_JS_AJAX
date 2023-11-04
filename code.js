@@ -20,7 +20,7 @@ function mostrarContenidos(){
             
         }      
     }
-    //xmlhttp.open("GET","https://martabdelarocha.github.io/MyBlog/about.html",true);
+    //xmlhttp.open("GET","https://martabdelarocha.github.io/DAR_Act2_JS_AJAX/lab1_web.html",true);
     xmlhttp.open("GET",url,true);
     xmlhttp.send();
  
