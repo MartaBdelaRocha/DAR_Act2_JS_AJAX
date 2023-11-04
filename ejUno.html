@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Uno: Javascript</title>
+    <link rel="stylesheet" type="text/css" href="lab1_style.css">
+    <script type="text/javascript" src="codeEJ1.js"></script>
+</head>
+<body>
+    <div class="cabeceraJS">
+        <h1>Laboratorio Tecnologías JavaScript y AJAX</h1>
+        <h2>Desarrollo de Aplicaciones en Red</h2>
+    </div>
+    
+    <a href="lab1_web.html"><p id ="enlace">Accede al ejercicio de AJAX</p></a>
+    <div class="ejercio">
+        <h2>1.Detectar si la cadena de entrada en un palíndromo</h2>
+        <form action="#">
+            Palabra:
+            <input type="text" id="palabra" size="50" />
+            <input type="button" id="enviarEJ1" value="Comprobar palíndromo" onclick="checkPalindromo()"/>
+            <p id="resultadoPalindromo"></p>
+        </form>
+    </div>
+    <div class="ejercio">
+        <h2>2.Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor</h2>
+        <form action="#">
+            Número:<input type="text" id="n1" size="10" />
+            Número:<input type="text" id="n2" size="10" />
+            <input type="button" id="enviarEJ1" value="Comprobar mayor" onclick="checkNumeros()"/>
+            <p id="resultadoNumeros"></p>
+        </form>
+    </div>
+    <div class="ejercio">
+        <h2>3.Escribe un programa que pida una frase y escriba las vocales que aparecen</h2>
+        <form action="#">
+            Frase:<input type="text" id="frase" size="50" />            
+            <input type="button" id="enviarEJ1" value="Vocales en frase" onclick="checkVocales()"/>
+            <p id="resultadoVocales"></p>
+        </form>
+    </div>
+    <div class="ejercio">
+        <h2>4.Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales</h2>
+        <form action="#">
+            Frase:<input type="text" id="fraseDos" size="50" />            
+            <input type="button" id="enviarEJ1" value="Contar cada vocal" onclick="checkEachVocal()"/>
+            <p id="resultadoSumaVocales"></p>
+        </form>
+    </div>
+
+    <h1 id="ejerciciosV2">Versión 2 de los ejercicios mediante ventanas emergentes</h1>
+
+    <div class="ejercio">
+        <h2>1.Detectar si la cadena de entrada en un palíndromo</h2>
+        <form action="#">
+            <input type="button" id="enviarEJ1" value="Comprobar palíndromo" onclick="checkPalindromoEmergente()"/>
+        </form>
+    </div>
+    <div class="ejercio">
+        <h2>2.Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor</h2>
+        <form action="#">            
+            <input type="button" id="enviarEJ1" value="Comprobar mayor" onclick="checkNumerosEmergente()"/>
+        </form>
+    </div>
+    <div class="ejercio">
+        <h2>3.Escribe un programa que pida una frase y escriba las vocales que aparecen</h2>
+        <form action="#">                     
+            <input type="button" id="enviarEJ1" value="Vocales en frase" onclick="checkVocalesEmergente()"/>
+        </form>
+    </div>
+    <div class="ejercio">
+        <h2>4.Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales</h2>        
+            <input type="button" id="enviarEJ1" value="Contar cada vocal" onclick="checkEachVocalEmergente()"/>        
+        </form>
+    </div>
+    
+</body>
+</html>
