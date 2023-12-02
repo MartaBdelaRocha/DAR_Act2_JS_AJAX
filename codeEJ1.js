@@ -53,8 +53,9 @@ function checkVocales(){
         document.getElementById('resultadoVocales').innerHTML = 'Escribe una frase';
     }
     else{
-        var vocales = frase.match(/[aeiou]/g).length;
-        document.getElementById('resultadoVocales').innerHTML = 'Hay '+vocales+' vocales en la frase';
+        var vocales = frase.match(/[aeiou]/g);
+        var totalVocales = vocales.length;
+        document.getElementById('resultadoVocales').innerHTML = 'Hay '+totalVocales+' vocales en la frase: '+vocales;
     }   
 }
 
@@ -156,8 +157,9 @@ function checkVocalesEmergente(){
         alert('Para contar vocales debes escribir una frase');
     }else{
 
-        var vocales = frase.match(/[aeiou]/g).length;
-        alert('Hay '+vocales+' vocales en la frase');
+        var vocales = frase.match(/[aeiou]/g);
+        var totalVocales = vocales.length;
+        alert('Hay '+totalVocales+' vocales en la frase: '+vocales);
 
     }      
 }
