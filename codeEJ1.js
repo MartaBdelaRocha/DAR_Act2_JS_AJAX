@@ -127,7 +127,7 @@ function checkNumerosEmergente(){
     var num2=prompt('Número 2','');
 
     if(num1 == '' || num2 == ''){
-        alert('Para comprobar el palíndromo debes escribir dos números');
+        alert('Para comparar debes escribir dos números');
     }else{
         if(num1 > num2){
             alert(num1+' es mayor que '+num2);
